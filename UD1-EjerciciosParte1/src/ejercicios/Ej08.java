@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ej8 {
+public class Ej08 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Introduzca su nombre: ");

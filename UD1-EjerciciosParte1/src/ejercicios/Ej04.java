@@ -2,7 +2,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ej4 {
+public class Ej04 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		System.out.print("Introduzca las 2 notas: ");
