@@ -1,6 +1,6 @@
-package ejercicio3;
+package excercise3;
 
-public class Ejercicio3 {
+public class Excercise3 {
 //	Create a package named “exercise3” and a Class named “Exercise3”.  
 //	Modify the code inside the main block:
 //  What is the output after executing this code?

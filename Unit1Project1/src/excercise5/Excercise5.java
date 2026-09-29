@@ -1,6 +1,6 @@
-package ejercicio5;
+package excercise5;
 
-public class Ejercicio5 {
+public class Excercise5 {
 //	Create a package named “exercise5” and a Class named “Exercise5”. 
 //	Write a program that displays your name, 
 //	address and telephone number, each on separate lines.

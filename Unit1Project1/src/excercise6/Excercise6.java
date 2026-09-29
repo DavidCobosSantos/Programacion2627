@@ -1,6 +1,6 @@
-package ejercicio6;
+package excercise6;
 
-public class Ejercicio6 {
+public class Excercise6 {
 //  Adapt the above program 
 //	to include a blank line between 
 //	your address and telephone number.
