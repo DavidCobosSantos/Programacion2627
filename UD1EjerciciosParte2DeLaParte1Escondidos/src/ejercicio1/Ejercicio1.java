@@ -16,6 +16,12 @@ public class Ejercicio1 {
 		System.out.println(resultado);
 		
 		
+		System.out.println("Dame un número con decimales: ");
+		Double num2 = sc.nextDouble();
+		Double suelo = Math.floor(num2);
+		Double techo = Math.ceil(num2);
+		Double resultado2 = num2+0.5 >= techo ? techo : suelo;
+		System.out.println(resultado2);
 		
 		sc.close();
 	}
