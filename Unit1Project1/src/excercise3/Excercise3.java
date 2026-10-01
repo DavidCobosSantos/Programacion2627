@@ -6,10 +6,9 @@ public class Excercise3 {
 //  What is the output after executing this code?
 //  The output after executing this code is a sum:
 //  "1 + 2 + 3 = 6"	
-	
+
 	public static void main(String[] args) {
 		System.out.println("1 + 2 " + "+ 3" + " = 6");
 	}
-
 
 }
