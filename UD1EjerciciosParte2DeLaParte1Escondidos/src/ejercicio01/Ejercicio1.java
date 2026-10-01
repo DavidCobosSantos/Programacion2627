@@ -1,4 +1,4 @@
-package ejercicio1;
+package ejercicio01;
 
 import java.util.Scanner;
 
@@ -8,6 +8,10 @@ import java.util.Scanner;
 
 public class Ejercicio1 {
 	public static void main(String[] args) {
+		
+// Hay 2 formas:
+// La primera:
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Dame un número con decimales: ");
 		Double num = sc.nextDouble();
@@ -15,6 +19,7 @@ public class Ejercicio1 {
 		
 		System.out.println(resultado);
 		
+// Y la segunda:
 		
 		System.out.println("Dame un número con decimales: ");
 		Double num2 = sc.nextDouble();
