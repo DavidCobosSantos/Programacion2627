@@ -4,7 +4,7 @@ public class Ejemplo03If {
 	public static void main(String[] args) {
 		Integer a = 2000;
 		Integer mes = 7;
-		Integer dias = 0;
+		Integer dias = null;
 		Boolean bisiesto = (a % 400 == 0) || ((a % 4 == 0) && (a % 100 != 0));
 		if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
 			dias = 31;
