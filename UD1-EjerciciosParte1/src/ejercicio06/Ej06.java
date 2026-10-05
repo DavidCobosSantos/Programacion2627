@@ -21,8 +21,7 @@ public class Ej06 {
 		Double multiplicacion = num1 * num2;
 		Double division = num1 / num2;
 
-		System.out.println("Suma: " + suma + "\nResta: " + resta + "\nMultiplicacion: " + multiplicacion
-				+ "\nDivision: " + division);
+		System.out.println("Suma: " + suma + "\nResta: " + resta + "\nMultiplicacion: " + multiplicacion + "\nDivision: " + division);
 		teclado.close();
 	}
 }
