@@ -14,7 +14,7 @@ public class Ejercicio07 {
 			esPrimo = false;
 		} else {
 			esPrimo = true;
-			for (int i = 2; i < n; i++) {
+			for (int i = 2; i <= Math.sqrt(n); i++) {
 				if (n % i == 0) {
 					esPrimo = false;
 					break;
