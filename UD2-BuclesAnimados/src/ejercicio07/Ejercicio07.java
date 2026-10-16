@@ -18,8 +18,8 @@ public class Ejercicio07 {
 		System.out.println("Introduzca un número de niveles: ");
 		Integer n = sc.nextInt();
 		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				if (i<n) {
+			for (int j = 0; j < n*2; j++) {
+				if (j<n) {
 					if (i+j>=n-1) {
 						System.out.print("*");
 					} else {
@@ -27,8 +27,13 @@ public class Ejercicio07 {
 						
 					}
 					
-				} else {
-
+				} else if (j>=n){
+					if (j>=i) {
+						System.out.print("*");
+					} else {
+						System.out.print(" ");
+						
+					}		
 				}
 			}
 			System.out.println();
