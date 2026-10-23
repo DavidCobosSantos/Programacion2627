@@ -1,5 +1,7 @@
 package ejercicio18;
 
+import java.util.Scanner;
+
 public class Ejercicio18 {
 //	18. Reto: reloj de arena
 //	Une una pirámide invertida con otra creciente, evitando duplicar la fila más estrecha.
@@ -12,22 +14,49 @@ public class Ejercicio18 {
 //	  ***
 //	 *****
 //	*******
+
 	public static void main(String[] args) {
-		Integer n=4;
-		for (int i = 0; i < 2*n-1; i++) {
-			for (int j = 0; j < 2*n-1; j++) {
-				if (i<=j && i<=(2*n-1)/2) {
-					System.out.print("*");
-				} else if (i+j<=n-1){
-					System.out.print("*");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Dame la altura.");
+		Integer n = sc.nextInt();
+
+		for (int i = 0; i < n * 2-1; i++) {
+			System.out.println();
+			for (int j = 0; j < n * 2; j++) {
+				if (i < n) {
+					if (j < n) {
+						if (j<i) {
+							System.out.print(" ");
+						} else {
+							System.out.print("*");
+						}
+
+					} else {
+						if ((j + i) < n*2-1) {
+							System.out.print("*");
+						} else {
+							System.out.print(" ");
+						}
+					}
 				} else {
-					System.out.println(" ");
+					if (j <= n) {
+						if ((j + i) <= (n*2 - 3)) {
+							System.out.print(" ");
+						} else {
+							System.out.print("*");
+						}
+
+					} else {
+						if (j > i ) {
+							System.out.print(" ");
+						} else {
+							System.out.print("*");
+						}
+					}
 				}
 			}
-			System.out.println();
+			
 		}
+		sc.close();
 	}
-
-
-
 }

@@ -16,9 +16,9 @@ public class Ejercicio01 {
 		System.out.print("Introduzca un número de filas: ");
 		Integer filas = sc.nextInt();
 		System.out.print("Introduzca un número de columnas: ");
-		Integer col = sc.nextInt();
+		Integer columnas = sc.nextInt();
 		for (int i = 0; i < filas; i++) {
-			for (int j = 0; j < col; j++) {
+			for (int j = 0; j < columnas; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
