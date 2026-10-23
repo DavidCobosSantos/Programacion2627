@@ -9,20 +9,20 @@ public class EjercicioRetoFinal {
 //	Comprueba que las dimensiones introducidas sean positivas.
 
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		Integer opcion = null;
 		do {
 			System.out.println("Menú");
 			System.out.println("1: Rombo");
 			System.out.println("2: Reloj de arena");
 			System.out.println("3: Salir");
-			opcion = teclado.nextInt();
+			opcion = sc.nextInt();
 			switch (opcion) {
 			case 1:
 				System.out.println("Dame la altura.");
 				Integer m;
 				do {
-					m = teclado.nextInt();
+					m = sc.nextInt();
 					if (m < 0) {
 						System.out.println("Números positivos.");
 					}
@@ -69,7 +69,7 @@ public class EjercicioRetoFinal {
 				System.out.println("Deme la altura.");
 				Integer n;
 				do {
-					n = teclado.nextInt();
+					n = sc.nextInt();
 					if (n < 0) {
 						System.out.println("Números positivos.");
 					}
@@ -120,6 +120,6 @@ public class EjercicioRetoFinal {
 				break;
 			}
 		} while (opcion != 3);
-		teclado.close();
+		sc.close();
 	}
 }
