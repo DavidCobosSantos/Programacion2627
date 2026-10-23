@@ -18,13 +18,13 @@ public class Ejercicio18 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Dame la altura.");
-		Integer n = sc.nextInt();
+		Integer altura = sc.nextInt();
 
-		for (int i = 0; i < n * 2-1; i++) {
+		for (int i = 0; i < altura * 2-1; i++) {
 			System.out.println();
-			for (int j = 0; j < n * 2; j++) {
-				if (i < n) {
-					if (j < n) {
+			for (int j = 0; j < altura * 2; j++) {
+				if (i < altura) {
+					if (j < altura) {
 						if (j<i) {
 							System.out.print(" ");
 						} else {
@@ -32,15 +32,15 @@ public class Ejercicio18 {
 						}
 
 					} else {
-						if ((j + i) < n*2-1) {
+						if ((j + i) < altura*2-1) {
 							System.out.print("*");
 						} else {
 							System.out.print(" ");
 						}
 					}
 				} else {
-					if (j <= n) {
-						if ((j + i) <= (n*2 - 3)) {
+					if (j <= altura) {
+						if ((j + i) <= (altura*2 - 3)) {
 							System.out.print(" ");
 						} else {
 							System.out.print("*");

@@ -20,41 +20,41 @@ public class EjercicioRetoFinal {
 			switch (opcion) {
 			case 1:
 				System.out.println("Dame la altura.");
-				Integer m;
+				Integer altura;
 				do {
-					m = sc.nextInt();
-					if (m < 0) {
+					altura = sc.nextInt();
+					if (altura < 0) {
 						System.out.println("Números positivos.");
 					}
-				} while (m < 0);
+				} while (altura < 0);
 
-				for (int i = 0; i < m * 2; i++) {
-					for (int j = 0; j < m * 2; j++) {
-						if (i < m) {
-							if (j < m) {
-								if ((j + i) <= (m - 2)) {
+				for (int i = 0; i < altura * 2; i++) {
+					for (int j = 0; j < altura * 2; j++) {
+						if (i < altura) {
+							if (j < altura) {
+								if ((j + i) <= (altura - 2)) {
 									System.out.print(" ");
 								} else {
 									System.out.print("*");
 								}
 
 							} else {
-								if (j > i + m - 1) {
+								if (j > i + altura - 1) {
 									System.out.print(" ");
 								} else {
 									System.out.print("*");
 								}
 							}
 						} else {
-							if (j < m) {
-								if (j + m > i) {
+							if (j < altura) {
+								if (j + altura > i) {
 									System.out.print("*");
 								} else {
 									System.out.print(" ");
 								}
 
 							} else {
-								if ((j + i) < (m * 3 - 2)) {
+								if ((j + i) < (altura * 3 - 2)) {
 									System.out.print("*");
 								} else {
 									System.out.print(" ");
