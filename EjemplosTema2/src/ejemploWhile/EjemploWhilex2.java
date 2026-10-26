@@ -1,6 +1,5 @@
 package ejemploWhile;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class EjemploWhilex2 {
@@ -26,6 +25,7 @@ public class EjemploWhilex2 {
 			System.out.println("TE QUEDASTE SIN MOVIL");
 
 		}
+		sc.close();
 	}
 }
 
