@@ -81,24 +81,28 @@ public class Ejercicios {
 
 	// 7. Calcular la media mediante for-each.
 	public static Double media1(List<Integer> numeros) {
-
+		double res = 0.0;
 		Integer suma = 0;
-		for (Integer numero : numeros) {
-			suma += numero;
+		if (numeros.size() != 0) {
+			for (Integer numero : numeros) {
+				suma += numero;
+			} 
+			res = (double) suma / numeros.size();
 		}
-
-		return (double) suma / numeros.size();
+		return res;
 	}
 
 	// 8. Calcular la media mediante for clásico.
 	public static Double media2(List<Integer> numeros) {
-
+		double res=0.0;
 		Integer suma = 0;
-		for (int i = 0; i < numeros.size(); i++) {
-			suma += numeros.get(i);
+		if (numeros.size() !=0) {
+			for (int i = 0; i < numeros.size(); i++) {
+				suma += numeros.get(i);
+			} 
+			res = (double) suma / numeros.size();
 		}
-
-		return (double) suma / numeros.size();
+		return res;
 	}
 
 	// 9. Calcular la media mediante while.
@@ -163,18 +167,35 @@ public class Ejercicios {
 	}
 
 	public static void cuentaAtrasSustos(Integer n) {
-		for (int i = n; i >= 1; i--) {
-			System.out.println("Boo " + i);
+//		for (int i = n; i >= 1; i--) {
+//			System.out.println("Boo " + i);
+//		}
+//		System.out.println("¡Susto final!");
+		if (n == 0) {
+			System.out.println("¡Susto final!");
+		} else {
+			System.out.println("Boo " + n);
+			cuentaAtrasSustos(n - 1);
 		}
-		System.out.println("¡Susto final!");
+	}
+
+	// RECURSIVIDAD FACTORIAL
+	public static Integer factorial(Integer n) {
+		Integer res;
+		if (n == 0) {
+			res = 1;
+		} else {
+			res = n * factorial(n - 1);
+		}
+		return res;
 	}
 
 	public static Integer sumaEntreCeros(List<Integer> numeros) {
 		Integer suma = 0;
 		for (int i = 0; i < numeros.size(); i++) {
 			if (numeros.get(i) == 0) {
-				for (int j = i+1; j < numeros.size(); j++) {
-					suma += numeros.get(i);
+				for (int j = i + 1; j < numeros.size(); j++) {
+					suma += numeros.get(j);
 					if (numeros.get(j) == 0) {
 						break;
 					}

@@ -13,7 +13,8 @@ public class TestEjercicios {
     	carameloLista.add(2);carameloLista.add(4);carameloLista.add(3);
     	carameloLista.add(6);carameloLista.add(5);carameloLista.add(28);
         System.out.println("Lista: " + carameloLista);
-        
+    	List<Integer> carm = new ArrayList<Integer>();
+
        
         
         System.out.println("\n--- SUMAS ---");
@@ -27,7 +28,7 @@ public class TestEjercicios {
         System.out.println("Cantidad de perfectos: " + Ejercicios.contarPerfectos(carameloLista));
 
         System.out.println("\n--- MEDIAS ---");
-        System.out.println("Media 1 (for-each): " + Ejercicios.media1(carameloLista));
+        System.out.println("Media 1 (for-each): " + Ejercicios.media1(carm));
         System.out.println("Media 2 (for):      " + Ejercicios.media2(carameloLista));
         System.out.println("Media 3 (while):    " + Ejercicios.media3(carameloLista));
 
@@ -66,11 +67,13 @@ public class TestEjercicios {
         
         //Ejercicio 5 — Recursividad: Cuenta Atrás de Sustos
         System.out.println("\n--- Cuenta Atrás de Sustos ---");
-        Ejercicios.cuentaAtrasSustos(5);
+        Ejercicios.cuentaAtrasSustos(6);
         
         //Ejercicio 6 — La suma entre los dos ceros
         System.out.println("\n--- La suma entre los dos ceros ---");
         List<Integer> numeros = List.of(3, 9, 0, 4, 10, 0, -3, 5);
         System.out.println(Ejercicios.sumaEntreCeros(numeros)); // 4+10 = 14
+        
+        
     }
 }
