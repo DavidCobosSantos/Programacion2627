@@ -86,7 +86,7 @@ public class Ejercicios {
 		if (numeros.size() != 0) {
 			for (Integer numero : numeros) {
 				suma += numero;
-			} 
+			}
 			res = (double) suma / numeros.size();
 		}
 		return res;
@@ -94,12 +94,12 @@ public class Ejercicios {
 
 	// 8. Calcular la media mediante for clásico.
 	public static Double media2(List<Integer> numeros) {
-		double res=0.0;
+		double res = 0.0;
 		Integer suma = 0;
-		if (numeros.size() !=0) {
+		if (numeros.size() != 0) {
 			for (int i = 0; i < numeros.size(); i++) {
 				suma += numeros.get(i);
-			} 
+			}
 			res = (double) suma / numeros.size();
 		}
 		return res;
@@ -205,4 +205,18 @@ public class Ejercicios {
 		}
 		return suma;
 	}
+
+	// RECURSIVIDAD FIBONACCI
+	public static Long fibonacci(Integer n) {
+		Long res = 0L;
+		if (n == 0) {
+			res = 0L;
+		} else if (n == 1) {
+			res = 1L;
+		} else {
+			res = fibonacci(n - 1) + fibonacci(n - 2);
+		}
+		return res;
+	}
+
 }
