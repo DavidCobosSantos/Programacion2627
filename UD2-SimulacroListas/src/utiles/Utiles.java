@@ -31,5 +31,4 @@ public class Utiles {
         return res;
     }
     
-    //TODO factorial de un número
 }
