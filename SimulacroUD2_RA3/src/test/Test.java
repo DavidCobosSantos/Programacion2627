@@ -34,6 +34,8 @@ public class Test {
 		System.out.println(Ejercicios.contarPicos(List.of(2, 5, 4, 7, 4), 3));
 		System.out.println(Ejercicios.contarPicos(List.of(1, 2), 1));
 		
+		//Ejercicio 6:
+		
 	}
 	
 }

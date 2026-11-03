@@ -137,6 +137,28 @@ public class Ejercicios {
 			}
 		}
 		return contador;
-
 	}
+
+//	Recibe una lista de números enteros no negativos y una suma objetivo. 
+//	Recorre la lista de izquierda a derecha y calcula la suma de las cifras decimales de cada número.
+//	Devuelve la posición (índice, empezando en 0) del PRIMER número cuya suma de cifras coincida con la suma objetivo.
+//	Para calcular la suma de cifras, utiliza operaciones aritméticas (%, /) 
+//	y un bucle while; no conviertas los números en cadenas. Utiliza un bucle for para recorrer la lista y, 
+//	cuando encuentres la primera coincidencia, finaliza la búsqueda obligatoriamente con break. 
+//	Si no hay coincidencias o la lista está vacía, devuelve -1.
+//	Comprueba y depura el método desde TestEjercicios: añade al menos dos pruebas propias diferentes de los ejemplos, 
+//	indicando en comentarios la entrada, el resultado esperado y el obtenido. Debes probar un caso con coincidencia
+//	y otro sin coincidencia.
+
+//	public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
+//		Integer suma = 0;
+//		Integer posicion = 0;
+//		for (int i = 0; i < numeros.size(); i++) {
+//			while () {
+//				
+//			}
+//		}
+//		return posicion;
+//	}
+
 }
