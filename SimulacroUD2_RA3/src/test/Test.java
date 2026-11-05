@@ -35,7 +35,17 @@ public class Test {
 		System.out.println(Ejercicios.contarPicos(List.of(1, 2), 1));
 		
 		//Ejercicio 6:
+		System.out.println("\n--- IMPOSIBLE ---");
+		System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(42, 153, 85, 29), 9) );
+		System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(42, 153, 85, 29), 13));
+		System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(0, 31), 0));
+		System.out.println(Ejercicios.primeraPosicionSumaCifras(List.of(42, 153), 18));
 		
+		//Ejercicio 7:
+		System.out.println("\n--- NON-OVERLAPPING PAIRS---");
+		System.out.println(Ejercicios.countNonOverlappingPairs(List.of(2, 3, 2, 8, 7)));
+		System.out.println(Ejercicios.countNonOverlappingPairs(List.of(1, 2, 3)));
+		System.out.println(Ejercicios.countNonOverlappingPairs(List.of(1, 1, 1)));
 	}
 	
 }

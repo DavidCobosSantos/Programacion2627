@@ -150,15 +150,36 @@ public class Ejercicios {
 //	indicando en comentarios la entrada, el resultado esperado y el obtenido. Debes probar un caso con coincidencia
 //	y otro sin coincidencia.
 
-//	public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
-//		Integer suma = 0;
-//		Integer posicion = 0;
-//		for (int i = 0; i < numeros.size(); i++) {
-//			while () {
-//				
-//			}
-//		}
-//		return posicion;
-//	}
+	public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
+		Integer posicion = -1;
+		for (int i = 0; i < numeros.size(); i++) {
+			
+			if (Utiles.sumaCifras(numeros.get(i)) == sumaObjetivo) {
+				posicion = i;
+				break;
+			} 
+		}
+		return posicion;
+	}
+
+//	RA3 assessment criteria: b) repetition structures; f) program testing and debugging.
+//	Write a method that counts how many non-overlapping pairs of adjacent integers have a sum that is a multiple of 5.
+//	Read the list from left to right. If two adjacent numbers form a valid pair, count that pair and skip both numbers. 
+//	Otherwise, move forward by one position. A number cannot belong to two counted pairs.
+//	Use a while loop. Every local variable name must be in English. You may assume the list contains no null values.
+//	An empty list or a list with one element produces 0.
+
+	public static Integer countNonOverlappingPairs(List<Integer> numbers) {
+		Integer res = 0;
+		for (int i = 0; i < numbers.size() - 1; i++) {
+			Integer actual = numbers.get(i);
+			Integer next = numbers.get(i+1);
+			if ((actual+next)%5==0) {
+				res++;
+				i++;
+			}
+		}
+		return res;
+	}
 
 }
