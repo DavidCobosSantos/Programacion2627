@@ -131,7 +131,8 @@ public class Ejercicios {
 		Integer contador = 0;
 		if (alturas.size() >= 3) {
 			for (int i = 1; i < alturas.size() - 1; i++) {
-				if (alturas.get(i) - diferenciaMinima >= alturas.get(i + 1) && alturas.get(i) - diferenciaMinima >= alturas.get(i - 1)) {
+				if (alturas.get(i) - diferenciaMinima >= alturas.get(i + 1)
+						&& alturas.get(i) - diferenciaMinima >= alturas.get(i - 1)) {
 					contador++;
 				}
 			}
@@ -151,15 +152,25 @@ public class Ejercicios {
 //	y otro sin coincidencia.
 
 	public static Integer primeraPosicionSumaCifras(List<Integer> numeros, Integer sumaObjetivo) {
-		Integer posicion = -1;
-		for (int i = 0; i < numeros.size(); i++) {
-			
+//		Integer posicion = -1;
+//		for (int i = 0; i < numeros.size(); i++) {
+//			
+//			if (Utiles.sumaCifras(numeros.get(i)) == sumaObjetivo) {
+//				posicion = i;
+//				break;
+//			} 
+//		}
+//		return posicion;
+		Integer pos = -1;
+		Integer i = 0;
+		while (i < numeros.size()) {
 			if (Utiles.sumaCifras(numeros.get(i)) == sumaObjetivo) {
-				posicion = i;
-				break;
-			} 
+				pos = i;
+				break;				
+			}
+			i++;
 		}
-		return posicion;
+		return pos;
 	}
 
 //	RA3 assessment criteria: b) repetition structures; f) program testing and debugging.
@@ -173,8 +184,8 @@ public class Ejercicios {
 		Integer res = 0;
 		for (int i = 0; i < numbers.size() - 1; i++) {
 			Integer actual = numbers.get(i);
-			Integer next = numbers.get(i+1);
-			if ((actual+next)%5==0) {
+			Integer next = numbers.get(i + 1);
+			if ((actual + next) % 5 == 0) {
 				res++;
 				i++;
 			}
