@@ -132,6 +132,7 @@ public class Ejercicios {
 	}
 
 	// METODO PARA COMPROBAR SI UNA LISTA ES CRECIENTE
+	// si la lista tiene 0 o 1 elemento se considera que es creciente
 	public static Boolean crecienteEn(List<Integer> lis) {
 		Boolean res = true;
 //		for (int i = 0; i < lis.size() - 1; i++) {
