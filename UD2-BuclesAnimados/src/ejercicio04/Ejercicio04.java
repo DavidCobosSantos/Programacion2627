@@ -14,7 +14,7 @@ public class Ejercicio04 {
 //	*
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Introduzca la altura: ");
+		System.out.println("Introduzca una altura: ");
 		Integer altura = sc.nextInt();
 		Integer n=altura;
 		for (int i = 0; i < altura; i++) {

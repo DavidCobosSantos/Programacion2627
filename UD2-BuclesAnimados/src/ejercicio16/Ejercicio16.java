@@ -16,11 +16,11 @@ public class Ejercicio16 {
 //	#.....#
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Introduzca la altura: ");
+		System.out.print("Introduzca una altura: ");
 		Integer altura = sc.nextInt();
 		for (int i = 0; i < altura; i++) {
 			for (int j = 0; j < altura; j++) {
-				if (i==j || (i+j)==altura-1) {
+				if (i == j || (i + j) == altura - 1) {
 					System.out.print("#");
 				} else {
 					System.out.print(".");
@@ -30,6 +30,5 @@ public class Ejercicio16 {
 		}
 		sc.close();
 	}
-
 
 }
