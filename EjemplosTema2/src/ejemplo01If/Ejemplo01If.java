@@ -10,5 +10,12 @@ public class Ejemplo01If {
 			System.out.println("no es par");
 		}
 	}
-
+	public static Integer sumaLongitudNum (Integer longitud, Integer n) {
+		Integer suma=0;
+		for (int i = 0; i < longitud; i++) {
+		
+		}
+		
+		return suma;
+	}
 }

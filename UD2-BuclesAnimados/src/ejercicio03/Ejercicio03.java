@@ -14,12 +14,19 @@ public class Ejercicio03 {
 //	*****
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Introduzca una altura: ");
 		Integer altura = sc.nextInt();
 		for (int i = 0; i < altura; i++) {
 			for (int j = 0; j < altura; j++) {
-				if (i >= j) {
-					System.out.print("*");
+				if (i-0 == j) {
+					System.out.print("1");
+				}if (i-1== j) {
+					System.out.print("0");
+				} if (i-2==j) {
+					System.out.print("1");
+				}if (i-3== j) {
+					System.out.print("0");
 				}
 			}
 			System.out.println();
