@@ -6,7 +6,7 @@ public class Caballo {
 	private Raza raza;
 	private Integer victorias;
 	private Double velocidad;
-	public Caballo(String id, String nombre, Raza raza, Integer victorias, Double velocidad) {
+	public Caballo(String id, String nombre, Raza raza, Double velocidad) {
 		this.id = id;
 		this.nombre = nombre;
 		this.raza = raza;
@@ -39,6 +39,14 @@ public class Caballo {
 	}
 	public String getId() {
 		return id;
+	}
+	@Override
+	public String toString() {
+		return "Caballo [id=" + id + ", nombre=" + nombre + ", raza=" + raza + ", victorias=" + victorias
+				+ ", velocidad=" + velocidad + ", getNombre()=" + getNombre() + ", getRaza()=" + getRaza()
+				+ ", getVictorias()=" + getVictorias() + ", getVelocidad()=" + getVelocidad() + ", getId()=" + getId()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
 	}
 	
 
