@@ -1,6 +1,6 @@
-package ejemplo03If;
+package anyoBisiesto;
 
-public class Ejemplo03If {
+public class Anyobisiesto {
 	public static void main(String[] args) {
 		Integer a = 2000;
 		Integer mes = 7;
