@@ -1,6 +1,6 @@
-package ejemplo01If;
+package numeropar;
 
-public class Ejemplo01If {
+public class Numeropar {
 //es par o no un número
 	public static void main(String[] args) {
 		Integer x = 6;

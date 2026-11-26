@@ -208,12 +208,12 @@ public class Ejercicios {
 
 	// RECURSIVIDAD FIBONACCI
 	public static Long fibonacci(Integer n) {
-		Long res = 0L;
+		Long res = 0L; //casos base
 		if (n == 0) {
 			res = 0L;
 		} else if (n == 1) {
 			res = 1L;
-		} else {
+		} else {//caso recursivo
 			res = fibonacci(n - 1) + fibonacci(n - 2);
 		}
 		return res;
