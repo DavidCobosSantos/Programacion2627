@@ -18,13 +18,15 @@ public class Ejercicio15 {
 		System.out.println("Introduzca una altura.");
 		Integer altura = sc.nextInt();
 
-		for (int i = 1; i <= altura; i++) {
+		for (int i = 0; i < altura; i++) {
 			System.out.println();
-			for (int j = 1; j <= altura; j++) {
+			for (int j = 0; j < altura; j++) {
 				if (j == i) {
 					System.out.print("#");
+				} else if (i<j){
+					System.out.print("*");
 				} else {
-					System.out.print(".");
+					System.out.print(" ");
 				}
 			}
 
